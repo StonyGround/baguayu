@@ -1,0 +1,66 @@
+ext {
+
+    android = [
+            compileSdkVersion: 26,
+            buildToolsVersion: "25.0.3",
+
+            minSdkVersion    : 19,
+            targetSdkVersion : 26,
+
+            versionCode      : 1,
+            versionName      : '1.0.0',
+
+            VSupportSdk      : '25.3.0',
+            VRxlifecycle     : "1.0",
+
+            VOkHttpGO         : '2.1.4',
+            VOkRx             : '0.1.2',
+            VOkServer         : '1.1.3',
+    ]
+
+    dependencies = [
+            "appcompat-v7"               : "com.android.support:appcompat-v7:${android["VSupportSdk"]}",
+            "support-v4"                 : "com.android.support:support-v4:${android["VSupportSdk"]}",
+            "design"                     : "com.android.support:design:${android["VSupportSdk"]}",
+            "annotations"                : "com.android.support:support-annotations:${android["VSupportSdk"]}",
+            "recyclerview-v7"            : "com.android.support:recyclerview-v7:${android["VSupportSdk"]}",
+
+            "butterknife"                : "com.jakewharton:butterknife:7.0.1",
+            "hudLibrary"                  : "com.github.weiteng4droid:hudLibrary:1.1.4",
+
+            "rxandroid"                  : "io.reactivex:rxandroid:1.2.1",
+            "rxjava"                     : "io.reactivex:rxjava:1.1.6",
+            "rxlifecycle"                : "com.trello:rxlifecycle:${android["VRxlifecycle"]}",
+            "rxlifecycle-android"        : "com.trello:rxlifecycle-android:${android["VRxlifecycle"]}",
+            "rxlifecycle-components"     : "com.trello:rxlifecycle-components:${android["VRxlifecycle"]}",
+            "rxpermissions"              : "com.tbruyelle.rxpermissions:rxpermissions:0.9.1@aar",
+
+            "gson"                          :"com.google.code.gson:gson:2.5",
+            "Fresco"                        :"com.facebook.fresco:fresco:0.12.0",
+            "glide"                        :"com.github.bumptech.glide:glide:3.6.1",
+            "luban"                         :"top.zibin:Luban:1.0.9",
+
+            "canary-debug"               : "com.squareup.leakcanary:leakcanary-android:1.4-beta2",
+            "canary-release"             : "com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2",
+
+            "okgo"                          :"com.lzy.net:okgo:${android["VOkHttpGO"]}",
+            "okrx"                          :"com.lzy.net:okrx:${android["VOkRx"]}",
+            "okserver"                      :"com.lzy.net:okserver:${android["VOkServer"]}",
+
+            "xlog"                              :"com.elvishew:xlog:1.3.0",
+            "rxbinding"                         :"com.jakewharton.rxbinding:rxbinding:0.4.0",
+            "circleimageview"                      :"de.hdodenhof:circleimageview:2.1.0",
+            "takephoto_library"                      :"com.jph.takephoto:takephoto_library:4.0.3",
+            "citypickerview"                      :"liji.library.dev:citypickerview:1.0.0",
+            "material-dialogs"                      :"com.afollestad.material-dialogs:core:0.9.4.2",
+            "eventbus"                              :"org.greenrobot:eventbus:3.0.0",
+            "recyclerview-swipe"                      :"com.yanzhenjie:recyclerview-swipe:1.0.4",
+            "recyclerviewheader2"                      :"com.bartoszlipinski:recyclerviewheader2:2.0.1",
+            "superadapter"                      :"org.byteam.superadapter:superadapter:3.6.7",
+            "topsnackbar"                      :"com.androidadvance:topsnackbar:0.0.8",
+            "PhotoView"                      :"com.commit451:PhotoView:1.2.4",
+            "kjframe"                      :"org.kymjs.kjframe:kjframe:2.5.1.2",
+            "gif"                      :"pl.droidsonroids.gif:android-gif-drawable:1.1.10",
+    ]
+
+}
